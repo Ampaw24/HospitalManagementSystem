@@ -57,10 +57,10 @@ $_SESSION['errmsg']="Invalid username or password";
 					<form class="form-login" method="post">
 						<fieldset>
 							<legend>
-								Sign in to your account
+								Sign in 
 							</legend>
 							<p>
-								Please enter your name and password to log in.<br />
+								Enter Required Credentials to log in.<br />
 								<span style="color:red;"><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg']="");?></span>
 							</p>
 							<div class="form-group">
@@ -74,18 +74,17 @@ $_SESSION['errmsg']="Invalid username or password";
 									 </span>
 							</div>
 							<div class="form-actions">
-								
-								<button type="submit" class="btn btn-primary pull-right" name="submit">
-									Login <i class="fa fa-arrow-circle-right"></i>
+								<button type="submit" class="btn btn-success pull-right" name="submit">
+									Sign in      
 								</button>
 							</div>
-							<a href="../../index.php">Bacto Home Page</a>
+							<a href="../../index.php">Back to Home Page</a>
 							
 						</fieldset>
 					</form>
 
 					<div class="copyright">
-						<span class="text-bold text-uppercase">Hospital Management System</span>
+						<span class="text-bold text-uppercase">Vikmack HMS</span>
 					</div>
 			
 				</div>

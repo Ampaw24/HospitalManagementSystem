@@ -6,7 +6,7 @@
 							<i class="ti-align-justify"></i>
 						</a>
 						<a class="navbar-brand" href="#">
-							<h2 style="padding-top:20%; color:#000 ">HMS</h2>
+							<h2 style="padding-top:20%; color:#007aff ">Vickmac</h2>
 						</a>
 						<a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app">
 							<i class="ti-align-justify"></i>
@@ -21,14 +21,14 @@
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-right">
 							<!-- start: MESSAGES DROPDOWN -->
-								<li  style="padding-top:2% ">
-								<h2>Hospital Management System</h2>
+								<li  style="padding-top:4%; margin-top:3; ">
+								<h2>Vickmac-HMS</h2>
 							</li>
 						
 						
 							<li class="dropdown current-user">
 								<a href class="dropdown-toggle" data-toggle="dropdown">
-									<img src="assets/images/images.jpg" > <span class="username">
+									<img src="assets/images/account.png" > <span class="username">
 
 
 

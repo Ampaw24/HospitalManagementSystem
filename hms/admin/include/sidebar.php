@@ -24,7 +24,7 @@
 								<a href="javascript:void(0)">
 									<div class="item-content">
 										<div class="item-media">
-											<i class="ti-user"></i>
+											<i class="ti-user text-primary"></i>
 										</div>
 										<div class="item-inner">
 											<span class="title"> Doctors </span><i class="icon-arrow"></i>
@@ -109,7 +109,7 @@
 
 
 
-				<li>
+				<!-- <li>
 								<a href="javascript:void(0)">
 									<div class="item-content">
 										<div class="item-media">
@@ -135,7 +135,7 @@
 									</li>
 									
 								</ul>
-								</li>
+								</li> -->
 
 
 
@@ -146,7 +146,7 @@
 											<i class="ti-list"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Doctor Session Logs </span>
+											<span class="title">  Session Logs - Doctors </span>
 										</div>
 									</div>
 								</a>
@@ -195,7 +195,7 @@
 											<i class="ti-file"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Pages </span><i class="icon-arrow"></i>
+											<span class="title">Manage Pages </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
@@ -208,7 +208,7 @@
 									</li>
 																	<li>
 										<a href="contact.php">
-											<span class="title">Cotnact Us </span>
+											<span class="title">Contact Us </span>
 										</a>
 									</li>
 								</ul>
@@ -224,7 +224,7 @@
 											<i class="ti-search"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Patient Search </span>
+											<span class="title"> Search Patients </span>
 										</div>
 									</div>
 								</a>
