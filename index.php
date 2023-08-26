@@ -129,6 +129,7 @@ echo "<script>window.location.href ='index.php'</script>";
                             </div>
                         </div>
                     </div>
+
                     <div class="col-sm-4 blog-smk">
                         <div class="blog-single">
 
@@ -152,6 +153,21 @@ echo "<script>window.location.href ='index.php'</script>";
                                 <h6>Admin Login</h6>
                     
                                 <a href="hms/admin" target="_blank">
+                                    <button class="btn btn-success btn-sm">Login</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 blog-smk">
+                        <div class="blog-single">
+
+                                <img src="assets/images/nurses.webp" alt="">
+
+                            <div class="blog-single-det">
+                                <h6>Nurse Login</h6>
+                    
+                                <a href="hms/nurse" target="_blank">
                                     <button class="btn btn-success btn-sm">Login</button>
                                 </a>
                             </div>
