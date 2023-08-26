@@ -12,7 +12,7 @@
 								<a href="dashboard.php">
 									<div class="item-content">
 										<div class="item-media">
-											<i class="ti-home"></i>
+											<i class="fa fa-tachometer"></i>
 										</div>
 										<div class="item-inner">
 											<span class="title"> Dashboard </span>
@@ -38,7 +38,7 @@
 								<a href="javascript:void(0)">
 									<div class="item-content">
 										<div class="item-media">
-											<i class="ti-user"></i>
+											<i class="fa fa-users"></i>
 										</div>
 										<div class="item-inner">
 											<span class="title"> Patients </span><i class="icon-arrow"></i>
@@ -64,7 +64,7 @@
 								<a href="search.php">
 									<div class="item-content">
 										<div class="item-media">
-											<i class="ti-search"></i>
+											<i class="fa fa-search"></i>
 										</div>
 										<div class="item-inner">
 											<span class="title"> Search </span>

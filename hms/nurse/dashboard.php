@@ -10,7 +10,7 @@ if(strlen($_SESSION['id']==0)) {
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Doctor  | Dashboard</title>
+		<title>Nurses || Dashboard</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -27,8 +27,14 @@ if(strlen($_SESSION['id']==0)) {
 		<link rel="stylesheet" href="assets/css/plugins.css">
 		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
 
-
+ 
 	</head>
+	<style>
+		.cont {
+			background-color: #f8f9fa; /* Choose your desired background color */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+	</style>
 	<body>
 		<div id="app">		
 <?php include('include/sidebar.php');?>
@@ -43,7 +49,7 @@ if(strlen($_SESSION['id']==0)) {
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">Doctor | Dashboard</h1>
+									<h1 class="mainTitle">Nurse || Dashboard</h1>
 																	</div>
 								<ol class="breadcrumb">
 									<li>
@@ -57,36 +63,102 @@ if(strlen($_SESSION['id']==0)) {
 						</section>
 						<!-- end: PAGE TITLE -->
 						<!-- start: BASIC EXAMPLE -->
-							<div class="container-fluid container-fullw bg-white">
+
+
+								<div class="container-fluid container-fullw bg-white">
 							<div class="row">
 								<div class="col-sm-4">
-									<div class="panel panel-white no-radius text-center">
+									<div class="panel panel-green radius-5 text-center">
 										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle">My Profile</h2>
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-tachometer fa-stack-1x fa-inverse"></i> </span>
+											<h2 class="StepTitle" style="color: white;">Dashboard</h2>
 											
 											<p class="links cl-effect-1">
 												<a href="edit-profile.php">
-													Update Profile
+													Dashboard
 												</a>
 											</p>
 										</div>
 									</div>
 								</div>
 								<div class="col-sm-4">
-									<div class="panel panel-white no-radius text-center">
+									<div class="panel panel-green radius-5 text-center">
 										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle">My Appointments</h2>
-										
-											<p class="cl-effect-1">
-												<a href="appointment-history.php">
-													View Appointment History
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
+											<h2 class="StepTitle" style="color: white;">Patients</h2>
+											
+											<p class="links cl-effect-1">
+												<a href="edit-profile.php">
+													Add Patient-Details
 												</a>
 											</p>
 										</div>
 									</div>
 								</div>
+								<div class="col-sm-4">
+									<div class="panel panel-green radius-5 text-center">
+										<div class="panel-body">
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
+											<h2 class="StepTitle" style="color: white;">Patients</h2>
+											
+											<p class="links cl-effect-1">
+												<a href="edit-profile.php">
+													Manage Patients
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+
+								
+								
+							</div>
+
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="panel panel-green radius-5 text-center">
+										<div class="panel-body">
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-tachometer fa-stack-1x fa-inverse"></i> </span>
+											<h2 class="StepTitle" style="color: white;">Dashboard</h2>
+											
+											<p class="links cl-effect-1">
+												<a href="edit-profile.php">
+													Dashboard
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="panel panel-green radius-5 text-center">
+										<div class="panel-body">
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
+											<h2 class="StepTitle" style="color: white;">Patients</h2>
+											
+											<p class="links cl-effect-1">
+												<a href="edit-profile.php">
+													Add Patient-Details
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="panel panel-green radius-5 text-center">
+										<div class="panel-body">
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
+											<h2 class="StepTitle" style="color: white;">Patients</h2>
+											
+											<p class="links cl-effect-1">
+												<a href="edit-profile.php">
+													Manage Patients
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+
+								
 								
 							</div>
 						</div>

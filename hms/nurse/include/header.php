@@ -6,7 +6,7 @@
 							<i class="ti-align-justify"></i>
 						</a>
 						<a class="navbar-brand" href="#">
-							<h2 style="padding-top:20% ">HMS</h2>
+							<h2 style="padding-top:30%; margin-top:20;">HMS</h2>
 						</a>
 						<a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app">
 							<i class="ti-align-justify"></i>
@@ -21,8 +21,8 @@
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-right">
 							<!-- start: MESSAGES DROPDOWN -->
-								<li  style="padding-top:2% ">
-								<h2>Hospital Management System</h2>
+								<li  style="padding-top:9% ">
+								<h2>HMS</h2>
 							</li>
 						
 						
@@ -32,10 +32,10 @@
 
 
 
-									<?php $query=mysqli_query($con,"select doctorName from doctors where id='".$_SESSION['id']."'");
+									<?php $query=mysqli_query($con,"select nursename from nurses where id='".$_SESSION['id']."'");
 while($row=mysqli_fetch_array($query))
 {
-	echo $row['doctorName'];
+	echo $row['nursename'];
 }
 									?> <i class="ti-angle-down"></i></i></span>
 								</a>

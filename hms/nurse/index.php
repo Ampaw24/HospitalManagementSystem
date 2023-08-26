@@ -6,7 +6,7 @@ if(isset($_POST['submit']))
 {
 $uname=$_POST['username'];
 $dpassword=md5($_POST['password']);	
-$ret=mysqli_query($con,"SELECT * FROM doctors WHERE docEmail='$uname' and password='$dpassword'");
+$ret=mysqli_query($con,"SELECT * FROM nurses WHERE nursemail='$uname' and password='$dpassword'");
 $num=mysqli_fetch_array($ret);
 if($num>0)
 {
@@ -16,7 +16,7 @@ $uid=$num['id'];
 $uip=$_SERVER['REMOTE_ADDR'];
 $status=1;
 //Code Logs
-$log=mysqli_query($con,"insert into doctorslog(uid,username,userip,status) values('$uid','$uname','$uip','$status')");
+$log=mysqli_query($con,"insert into nurseslog(uid,userip,username,status) values('$uid','$uip','$uname','$status')");
 
 header("location:dashboard.php");
 }
