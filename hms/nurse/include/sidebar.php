@@ -36,7 +36,7 @@
 							</li>
 
 							<li>
-								<a href="appointment-history.php">
+								<a href="manage-bed.php">
 									<div class="item-content">
 										<div class="item-media">
 											<i class="fa fa-bed"></i>

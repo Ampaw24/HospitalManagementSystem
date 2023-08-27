@@ -154,7 +154,7 @@ if(strlen($_SESSION['id']==0)) {
 											<h2 class="StepTitle" style="color: white;">Assign Bed</h2>
 											
 											<p class="links cl-effect-1">
-												<a href="edit-profile.php">
+												<a href="manage-bed.php">
 													Assign Beds
 												</a>
 											</p>
