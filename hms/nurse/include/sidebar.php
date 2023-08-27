@@ -34,6 +34,21 @@
 									</div>
 								</a>
 							</li>
+
+							<li>
+								<a href="appointment-history.php">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-bed"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> Assign Beds </span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+
 							<li>
 								<a href="javascript:void(0)">
 									<div class="item-content">
@@ -50,6 +65,11 @@
 									<li>
 										<a href="add-patient.php">
 											<span class="title"> Add Patient</span>
+										</a>
+									</li>
+									<li>
+										<a href="add-patient.php">
+											<span class="title"> Patient Medication</span>
 										</a>
 									</li>
 									<li>

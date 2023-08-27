@@ -70,7 +70,7 @@ if(strlen($_SESSION['id']==0)) {
 								<div class="col-sm-4">
 									<div class="panel panel-green radius-5 text-center">
 										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-tachometer fa-stack-1x fa-inverse"></i> </span>
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-tachometer fa-stack-1x fa-inverse"></i> </span>
 											<h2 class="StepTitle" style="color: white;">Dashboard</h2>
 											
 											<p class="links cl-effect-1">
@@ -84,25 +84,27 @@ if(strlen($_SESSION['id']==0)) {
 								<div class="col-sm-4">
 									<div class="panel panel-green radius-5 text-center">
 										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
 											<h2 class="StepTitle" style="color: white;">Patients</h2>
 											
 											<p class="links cl-effect-1">
-												<a href="edit-profile.php">
+												<a href="add-patient.php">
 													Add Patient-Details
 												</a>
 											</p>
 										</div>
 									</div>
 								</div>
+
+
 								<div class="col-sm-4">
 									<div class="panel panel-green radius-5 text-center">
 										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
 											<h2 class="StepTitle" style="color: white;">Patients</h2>
 											
 											<p class="links cl-effect-1">
-												<a href="edit-profile.php">
+												<a href="manage-patient.php">
 													Manage Patients
 												</a>
 											</p>
@@ -118,45 +120,48 @@ if(strlen($_SESSION['id']==0)) {
 								<div class="col-sm-4">
 									<div class="panel panel-green radius-5 text-center">
 										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-tachometer fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle" style="color: white;">Dashboard</h2>
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-book fa-stack-1x fa-inverse"></i> </span>
+											<h2 class="StepTitle" style="color: white;">Records</h2>
 											
 											<p class="links cl-effect-1">
 												<a href="edit-profile.php">
-													Dashboard
+													Patient Medication Records
 												</a>
 											</p>
 										</div>
 									</div>
 								</div>
+
 								<div class="col-sm-4">
 									<div class="panel panel-green radius-5 text-center">
 										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle" style="color: white;">Patients</h2>
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-user fa-stack-1x fa-inverse"></i> </span>
+											<h2 class="StepTitle" style="color: white;">Profile Update</h2>
 											
 											<p class="links cl-effect-1">
 												<a href="edit-profile.php">
-													Add Patient-Details
+													Manage Personal Profile
 												</a>
 											</p>
 										</div>
 									</div>
 								</div>
+							
 								<div class="col-sm-4">
 									<div class="panel panel-green radius-5 text-center">
 										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle" style="color: white;">Patients</h2>
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-user fa-stack-1x fa-inverse"></i> </span>
+											<h2 class="StepTitle" style="color: white;">Assign Bed</h2>
 											
 											<p class="links cl-effect-1">
 												<a href="edit-profile.php">
-													Manage Patients
+													Assign Beds
 												</a>
 											</p>
 										</div>
 									</div>
 								</div>
+							
 
 								
 								

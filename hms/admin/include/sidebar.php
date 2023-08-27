@@ -108,6 +108,19 @@
 								</a>
 							</li>
 
+							<li>
+								<a href="manage-bed.php">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-bed"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> Manage Bed </span>
+										</div>
+									</div>
+								</a>
+							</li>
+
 
 
 				<li>
