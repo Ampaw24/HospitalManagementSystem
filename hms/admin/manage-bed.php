@@ -97,6 +97,8 @@ echo "<script>window.location.href ='manage-bed.php'</script>";
 					<input type="text" name="bednumber" class="form-control"  placeholder="Enter Bed Number" required="true">
 														</div>
 
+													
+
 
                                                         <div class="form-group">
 															<label for="rooms">

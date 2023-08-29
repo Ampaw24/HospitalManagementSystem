@@ -28,7 +28,7 @@
 						
 							<li class="dropdown current-user">
 								<a href class="dropdown-toggle" data-toggle="dropdown">
-									<img src="assets/images/images.jpg" > <span class="username">
+									<img src="assets/images/doctor.jpeg" > <span class="username">
 
 
 

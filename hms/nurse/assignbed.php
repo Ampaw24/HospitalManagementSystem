@@ -5,22 +5,20 @@ include('include/config.php');
 if(strlen($_SESSION['id']==0)) {
  header('location:logout.php');
   } else{
+	if(isset($_POST['submit']))
+	{	
+	$patient=$_POST['allpatient'];
+	$allocatedbed=$_POST['allcbed'];
 
-if(isset($_POST['submit']))
-{	
-
-$allocated = "Assigned";
-$alocated_val = $_POST['allcbed'];
-
-$sql=mysqli_query($con,"UPDATE hospitalbed SET allocated WHERE bednumber = $alocated_val");
-
-if($sql)
-{
-echo "<script>alert('Bed Allocated Successfully');</script>";
-echo "<script>window.location.href ='manage-bed.php'</script>";
-
-}
-}
+	$sql=mysqli_query($con,"insert into allocatebed(AssignedPatient,bednumber) values('$patient','$allocatedbed')");
+	
+	if($sql)
+	{
+	echo "<script>alert('Bed Allocated ');</script>";
+	header('location:manage-bed.php');
+	
+	}
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -85,12 +83,12 @@ echo "<script>window.location.href ='manage-bed.php'</script>";
 												</div>
 												<div class="panel-body">
 									
-													<form role="form" name="adddoc" method="post" onSubmit="return valid();">
+													<form role="form" name="addpat" method="post" onSubmit="return valid();">
                                                         <div class="form-group">
 															<label for="rooms">
 																Allocate Patient
 															</label>
-							<select name="allorooms" class="form-control" required="true">
+							<select name="allpatient" class="form-control" required="true">
 																<option value="">Select Patient </option>
 <?php $ret=mysqli_query($con,"select * from tblpatient");
 while($row=mysqli_fetch_array($ret))
