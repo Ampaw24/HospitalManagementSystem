@@ -30,6 +30,19 @@
 											<i class="fa fa-bed"></i>
 										</div>
 										<div class="item-inner">
+											<span class="title"> Manage Beds </span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a href="assignbed.php">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-bed"></i>
+										</div>
+										<div class="item-inner">
 											<span class="title"> Assign Beds </span>
 										</div>
 									</div>

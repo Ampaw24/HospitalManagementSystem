@@ -5,12 +5,19 @@ include('include/config.php');
 if(strlen($_SESSION['id']==0)) {
  header('location:logout.php');
   } else{
+	if(isset($_POST['submit']))
+{	
+
+
+
+
+}
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Nurse || Assign Bed</title>
+		<title>Nurse || Manage Bed</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -38,14 +45,14 @@ if(strlen($_SESSION['id']==0)) {
 <section id="page-title">
 <div class="row">
 <div class="col-sm-8">
-<h1 class="mainTitle">Nurse || Assign Bed</h1>
+<h1 class="mainTitle">Nurse || Manage Bed</h1>
 </div>
 <ol class="breadcrumb">
 <li>
 <span>Nurse</span>
 </li>
 <li class="active">
-<span>Assign Beds</span>
+<span>Manage Beds</span>
 </li>
 </ol>
 </div>
@@ -58,7 +65,7 @@ if(strlen($_SESSION['id']==0)) {
 <table class="table table-hover" id="sample-table-1">
 <thead>
 <tr>
-<th class="center">#</th>
+
 <th>Bed Number</th>
 <th>Allocated Room </th>
 <th>Assigned</th>
@@ -67,33 +74,34 @@ if(strlen($_SESSION['id']==0)) {
 </tr>
 </thead>
 <tbody>
-
-
 <?php
 $bedid=$_SESSION['id'];
-$sql=mysqli_query($con,"select * from hospitalbed where id='$bedid' ");
-
+$sql=mysqli_query($con," SELECT * FROM hospitalbed ORDER BY Bedid DESC ");
+$cnt=1;
 while($row=mysqli_fetch_array($sql))
 {
 ?>
 <tr>
-<td class="center"><?php echo $cnt;?>.</td>
+
 <td class="hidden-xs"><?php echo $row['bednumber'];?></td>
 <td><?php echo $row['roomLocation'];?></td>
-<td><?php echo $row['Assigned'];?></td>
-<td>
-	<input type="button" value="Assign" class="btn btn-secondary">
-</td>
-
+<td><?php echo $row['Allocated'];?></td>
 
 </td>
 <td>
+
+<button type="submit" class="btn btn-warning"><i class="fa fa-eye"></i> Assign Bed</button>
 
 </td>
 </tr>
 <?php 
 $cnt=$cnt+1;
- }?></tbody>
+ }?>
+
+
+
+
+</tbody>
 </table>
 </div>
 </div>
