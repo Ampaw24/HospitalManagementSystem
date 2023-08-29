@@ -6,16 +6,11 @@ if(strlen($_SESSION['id']==0)) {
  header('location:logout.php');
   } else{
 
-if(isset($_GET['cancel']))
-		  {
-mysqli_query($con,"update appointment set doctorStatus='0' where id ='".$_GET['id']."'");
-                  $_SESSION['msg']="Appointment canceled !!";
-		  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Assign Bed</title>
+		<title>Nurse || Assign Bed</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -35,117 +30,79 @@ mysqli_query($con,"update appointment set doctorStatus='0' where id ='".$_GET['i
 	<body>
 		<div id="app">		
 <?php include('include/sidebar.php');?>
-			<div class="app-content">
-				
-
-					<?php include('include/header.php');?>
-				<!-- end: TOP NAVBAR -->
-				<div class="main-content" >
-					<div class="wrap-content container" id="container">
+<div class="app-content">
+<?php include('include/header.php');?>
+<div class="main-content" >
+<div class="wrap-content container" id="container">
 						<!-- start: PAGE TITLE -->
-						<section id="page-title">
-							<div class="row">
-								<div class="col-sm-8">
-									<h1 class="mainTitle">Available Bed : </h1>
-																	</div>
-								<ol class="breadcrumb">
-									<li>
-										<span>Nurse</span>
-									</li>
-									<li class="active">
-										<span>|Assign Bed</span>
-									</li>
-								</ol>
-							</div>
-						</section>
-						<!-- end: PAGE TITLE -->
-						<!-- start: BASIC EXAMPLE -->
-						<div class="container-fluid container-fullw bg-white">
-						
+<section id="page-title">
+<div class="row">
+<div class="col-sm-8">
+<h1 class="mainTitle">Nurse || Assign Bed</h1>
+</div>
+<ol class="breadcrumb">
+<li>
+<span>Nurse</span>
+</li>
+<li class="active">
+<span>Assign Beds</span>
+</li>
+</ol>
+</div>
+</section>
+<div class="container-fluid container-fullw bg-white">
+<div class="row">
+<div class="col-md-12">
+<h5 class="over-title margin-bottom-15">Assign <span class="text-bold">Bed</span></h5>
+	
+<table class="table table-hover" id="sample-table-1">
+<thead>
+<tr>
+<th class="center">#</th>
+<th>Bed Number</th>
+<th>Allocated Room </th>
+<th>Assigned</th>
 
-									<div class="row">
-								<div class="col-md-12">
-									
-									<p style="color:red;"><?php echo htmlentities($_SESSION['msg']);?>
-								<?php echo htmlentities($_SESSION['msg']="");?></p>	
-									<table class="table table-hover" id="sample-table-1">
-										<thead>
-											<tr>
-												<th class="center">#</th>
-												<th class="hidden-xs">Id</th>
-												<th>Bed Id Number</th>
-												<th>Allocated Room</th>
-												<th>Allocated </th>
-												
-											</tr>
-										</thead>
-										<tbody>
+<th>Action</th> 
+</tr>
+</thead>
+<tbody>
+
+
 <?php
-$sql=mysqli_query($con,"select users.fullName as fname,appointment.*  from appointment join users on users.id=appointment.userId where appointment.doctorId='".$_SESSION['id']."'");
-$cnt=1;
+$bedid=$_SESSION['id'];
+$sql=mysqli_query($con,"select * from hospitalbed where id='$bedid' ");
+
 while($row=mysqli_fetch_array($sql))
 {
 ?>
-
-											<tr>
-												<td class="center"><?php echo $cnt;?>.</td>
-												<td class="hidden-xs"><?php echo $row['fname'];?></td>
-												<td><?php echo $row['doctorSpecialization'];?></td>
-												<td><?php echo $row['consultancyFees'];?></td>
-												<td><?php echo $row['appointmentDate'];?> / <?php echo
-												 $row['appointmentTime'];?>
-												</td>
-												<td><?php echo $row['postingDate'];?></td>
-												<td>
-<?php if(($row['userStatus']==1) && ($row['doctorStatus']==1))  
-{
-	echo "Active";
-}
-if(($row['userStatus']==0) && ($row['doctorStatus']==1))  
-{
-	echo "Cancel by Patient";
-}
-
-if(($row['userStatus']==1) && ($row['doctorStatus']==0))  
-{
-	echo "Cancel by you";
-}
+<tr>
+<td class="center"><?php echo $cnt;?>.</td>
+<td class="hidden-xs"><?php echo $row['bednumber'];?></td>
+<td><?php echo $row['roomLocation'];?></td>
+<td><?php echo $row['Assigned'];?></td>
+<td>
+	<input type="button" value="Assign" class="btn btn-secondary">
+</td>
 
 
+</td>
+<td>
 
-												?></td>
-												<td >
-												<div class="visible-md visible-lg hidden-sm hidden-xs">
-							<?php if(($row['userStatus']==1) && ($row['doctorStatus']==1))  
-{ ?>
-
-													
-	<a href="appointment-history.php?id=<?php echo $row['id']?>&cancel=update" onClick="return confirm('Are you sure you want to cancel this appointment ?')"class="btn btn-transparent btn-xs tooltips" title="Cancel Appointment" tooltip-placement="top" tooltip="Remove">Cancel</a>
-	<?php } else {
-
-		echo "Canceled";
-		} ?>
-												</div>
-												</td>
-											</tr>
-											
-											<?php 
+</td>
+</tr>
+<?php 
 $cnt=$cnt+1;
-											 }?>
-											
-											
-										</tbody>
-									</table>
-								</div>
-							</div>
-								</div>
-						
-						<!-- end: BASIC EXAMPLE -->
-						<!-- end: SELECT BOXES -->
-						
-					</div>
-				</div>
-			</div>
+ }?></tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 			<!-- start: FOOTER -->
 	<?php include('include/footer.php');?>
 			<!-- end: FOOTER -->

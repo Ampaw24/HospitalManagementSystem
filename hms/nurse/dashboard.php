@@ -74,13 +74,14 @@ if(strlen($_SESSION['id']==0)) {
 											<h2 class="StepTitle" style="color: white;">Dashboard</h2>
 											
 											<p class="links cl-effect-1">
-												<a href="edit-profile.php">
+												<a href="dashboard.php">
 													Dashboard
 												</a>
 											</p>
 										</div>
 									</div>
 								</div>
+
 								<div class="col-sm-4">
 									<div class="panel panel-green radius-5 text-center">
 										<div class="panel-body">
@@ -116,21 +117,7 @@ if(strlen($_SESSION['id']==0)) {
 								
 							</div>
 
-							<div class="row">
-								<div class="col-sm-4">
-									<div class="panel panel-green radius-5 text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-book fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle" style="color: white;">Records</h2>
-											
-											<p class="links cl-effect-1">
-												<a href="edit-profile.php">
-													Patient Medication Records
-												</a>
-											</p>
-										</div>
-									</div>
-								</div>
+
 
 								<div class="col-sm-4">
 									<div class="panel panel-green radius-5 text-center">
@@ -150,7 +137,7 @@ if(strlen($_SESSION['id']==0)) {
 								<div class="col-sm-4">
 									<div class="panel panel-green radius-5 text-center">
 										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-user fa-stack-1x fa-inverse"></i> </span>
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-bed fa-stack-1x fa-inverse"></i> </span>
 											<h2 class="StepTitle" style="color: white;">Assign Bed</h2>
 											
 											<p class="links cl-effect-1">
