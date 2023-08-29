@@ -10,11 +10,13 @@ if(isset($_POST['submit']))
 {	
 
 $allocated = "Assigned";
+$alocated_val = $_POST['allcbed'];
 
-$sql=mysqli_query($con,"insert into hospitalbed(allocated) values('$allocated')");
+$sql=mysqli_query($con,"UPDATE hospitalbed SET allocated WHERE bednumber = $alocated_val");
+
 if($sql)
 {
-echo "<script>alert('Bed info added Successfully');</script>";
+echo "<script>alert('Bed Allocated Successfully');</script>";
 echo "<script>window.location.href ='manage-bed.php'</script>";
 
 }
@@ -39,10 +41,6 @@ echo "<script>window.location.href ='manage-bed.php'</script>";
 		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="assets/css/plugins.css">
 		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
-
-
-
-
 	</head>
 	<body>
 		<div id="app">		
@@ -88,9 +86,6 @@ echo "<script>window.location.href ='manage-bed.php'</script>";
 												<div class="panel-body">
 									
 													<form role="form" name="adddoc" method="post" onSubmit="return valid();">
-
-
-
                                                         <div class="form-group">
 															<label for="rooms">
 																Allocate Patient
@@ -113,7 +108,7 @@ while($row=mysqli_fetch_array($ret))
 															<label for="rooms">
 																Allocate Room
 															</label>
-							<select name="allorooms" class="form-control" required="true">
+							<select name="allcbed" class="form-control" required="true">
 																<option value="">Select Bed</option>
 <?php $ret=mysqli_query($con,"select * from hospitalbed");
 while($row=mysqli_fetch_array($ret))
