@@ -7,6 +7,7 @@ if(strlen($_SESSION['id']==0)) {
   } else{
 
 ?>
+<!--  -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -53,7 +54,8 @@ if(strlen($_SESSION['id']==0)) {
 							</div>
 						</section>
 						<!-- end: PAGE TITLE -->
-						<!-- start: BASIC EXAMPLE -->
+
+				<!-- start: BASIC EXAMPLE -->
 							<div class="container-fluid container-fullw bg-white">
 							<div class="row">
 
@@ -61,7 +63,10 @@ if(strlen($_SESSION['id']==0)) {
 								<div class="col-sm-4">
 									<div class="panel panel-white no-radius text-center">
 										<div class="panel panel-blue">
-											<span class="fa-stack fa-2x">  5</span>
+											<span class="fa-stack fa-2x">  
+												5
+										
+											</span>
 											<h2 class="StepTitle" style="color: white;">Medicine</h2>
 											
 											<p class="links cl-effect-1">

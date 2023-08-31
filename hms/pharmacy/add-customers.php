@@ -9,16 +9,16 @@ if(strlen($_SESSION['id']==0)) {
 if(isset($_POST['submit']))
 {	
 $drugId=$_SESSION['id'];
-$medname=$_POST['medname'];
-$packing=$_POST['packing'];
-$patemail=$_POST['genericname'];
-$supplier=$_POST['supplier'];
+$cusname=$_POST['medname'];
+$address=$_POST['address'];
+$contacts=$_POST['contact'];
+$doctor=$_POST['doctor'];
 
-$sql=mysqli_query($con,"insert into medicines(NAME,PACKING,GENERIC_NAME,SUPPLIER_NAME) values('$medname','$packing','$patemail','$supplier')");
+$sql=mysqli_query($con,"insert into medicines(NAME,CONTACT_NUMBER,ADDRESS,DOCTOR_NAME) values('$medname','$contacts','$address','$doctor')");
 if($sql)
 {
-echo "<script>alert('Drug info added Successfully');</script>";
-header('location:add-medicine.php');
+echo "<script>alert('Customer info added Successfully');</script>";
+header('location:add-customer.php');
 
 }
 }
@@ -26,7 +26,7 @@ header('location:add-medicine.php');
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Pharmacist ||Add Medicine</title>
+		<title>Pharmacist ||Add Customer</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -71,14 +71,14 @@ error:function (){}
 <section id="page-title">
 <div class="row">
 <div class="col-sm-8">
-<h1 class="mainTitle">Pharma-Add Medicine</h1>
+<h1 class="mainTitle">Pharma-Add Customer</h1>
 </div>
 <ol class="breadcrumb">
 <li>
 <span>Pharmacist</span>
 </li>
 <li class="active">
-<span>Add Medicine</span>
+<span>Add Customer</span>
 </li>
 </ol>
 </div>
@@ -90,7 +90,7 @@ error:function (){}
 <div class="col-lg-8 col-md-12">
 <div class="panel panel-white">
 <div class="panel-heading">
-<h5 class="panel-title">Add Medicine</h5>
+<h5 class="panel-title">Add Customer</h5>
 </div>
 <div class="panel-body">
 <form role="form" name="" method="post">
@@ -98,38 +98,38 @@ error:function (){}
 
 <div class="form-group">
 <label for="doctorname">
-Medicine Name
+Customer Name
 </label>
 <input type="text" name="medname" class="form-control"  placeholder="Enter Medicine Name" required="true">
 </div>
 <div class="form-group">
 <label for="fess">
- Generic Name
+Contact Number
 </label>
-<input type="text" name="genericname" class="form-control"  placeholder="Enter Generic Name" required="true"  >
+<input type="text" name="contact" class="form-control"  placeholder="Enter Customer Number" required="true"  >
 </div>
 
 
 <div class="form-group">
 <label for="fess">
-Packing Number
+Address
 </label>
-<input type="text" name="packing" class="form-control"  placeholder="Select Packing Number">
+<input type="text" name="address" class="form-control"  placeholder="Select Packing Number">
 </div>
 
 
 <div class="form-group">
 															<label for="supplier">
-																Select Supplier
+																Select Doctor
 															</label>
-							<select name="supplier" class="form-control" required="true">
-																<option value="">Select Supplier</option>
-<?php $ret=mysqli_query($con,"select * from suppliers");
+							<select name="doctor" class="form-control" required="true">
+																<option value="">Select Doctor</option>
+<?php $ret=mysqli_query($con,"select * from doctors");
 while($row=mysqli_fetch_array($ret))
 {
 ?>
-																<option value="<?php echo htmlentities($row['NAME']);?>">
-																	<?php echo htmlentities($row['NAME']);?>
+																<option value="<?php echo htmlentities($row['doctorName']);?>">
+																	<?php echo htmlentities($row['doctorName']);?>
 																</option>
 																<?php } ?>
 																

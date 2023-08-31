@@ -9,16 +9,16 @@ if(strlen($_SESSION['id']==0)) {
 if(isset($_POST['submit']))
 {	
 $drugId=$_SESSION['id'];
-$medname=$_POST['medname'];
-$packing=$_POST['packing'];
-$patemail=$_POST['genericname'];
-$supplier=$_POST['supplier'];
+$medname=$_POST['supname'];
+$email=$_POST['supmail'];
+$contact=$_POST['supcontact'];
+$suppliead=$_POST['supaddress'];
 
-$sql=mysqli_query($con,"insert into medicines(NAME,PACKING,GENERIC_NAME,SUPPLIER_NAME) values('$medname','$packing','$patemail','$supplier')");
+$sql=mysqli_query($con,"insert into suppliers(NAME,EMAIL,CONTACT_NUMBER,ADDRESS) values('$medname','$email','$contact','$suppliead')");
 if($sql)
 {
-echo "<script>alert('Drug info added Successfully');</script>";
-header('location:add-medicine.php');
+echo "<script>alert('Supplier info added Successfully');</script>";
+header('location:add-suppliers.php');
 
 }
 }
@@ -26,7 +26,7 @@ header('location:add-medicine.php');
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Pharmacist ||Add Medicine</title>
+		<title>Pharmacist ||Add Supplier</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -71,14 +71,14 @@ error:function (){}
 <section id="page-title">
 <div class="row">
 <div class="col-sm-8">
-<h1 class="mainTitle">Pharma-Add Medicine</h1>
+<h1 class="mainTitle">Pharma-Add Supplier</h1>
 </div>
 <ol class="breadcrumb">
 <li>
 <span>Pharmacist</span>
 </li>
 <li class="active">
-<span>Add Medicine</span>
+<span>Add Supplier</span>
 </li>
 </ol>
 </div>
@@ -90,7 +90,7 @@ error:function (){}
 <div class="col-lg-8 col-md-12">
 <div class="panel panel-white">
 <div class="panel-heading">
-<h5 class="panel-title">Add Medicine</h5>
+<h5 class="panel-title">Add Supplier</h5>      
 </div>
 <div class="panel-body">
 <form role="form" name="" method="post">
@@ -98,43 +98,34 @@ error:function (){}
 
 <div class="form-group">
 <label for="doctorname">
-Medicine Name
+Supplier Name
 </label>
-<input type="text" name="medname" class="form-control"  placeholder="Enter Medicine Name" required="true">
+<input type="text" name="supname" class="form-control"  placeholder="Enter Supplier Name" required="true">
 </div>
 <div class="form-group">
 <label for="fess">
- Generic Name
+ Supplier Mail
 </label>
-<input type="text" name="genericname" class="form-control"  placeholder="Enter Generic Name" required="true"  >
+<input type="text" name="supmail" class="form-control"  placeholder="Enter Supplier Mail" required="true"  >
 </div>
 
 
 <div class="form-group">
 <label for="fess">
-Packing Number
+Supplier Contact
 </label>
-<input type="text" name="packing" class="form-control"  placeholder="Select Packing Number">
+<input type="text" name="supcontact" class="form-control"  placeholder="Supplier Contact">
+</div>
+
+<div class="form-group">
+<label for="fess">
+Address
+</label>
+<input type="text" name="supaddress" class="form-control"  placeholder="Supplier Address">
 </div>
 
 
-<div class="form-group">
-															<label for="supplier">
-																Select Supplier
-															</label>
-							<select name="supplier" class="form-control" required="true">
-																<option value="">Select Supplier</option>
-<?php $ret=mysqli_query($con,"select * from suppliers");
-while($row=mysqli_fetch_array($ret))
-{
-?>
-																<option value="<?php echo htmlentities($row['NAME']);?>">
-																	<?php echo htmlentities($row['NAME']);?>
-																</option>
-																<?php } ?>
-																
-															</select>
-														</div>
+
 
 
 

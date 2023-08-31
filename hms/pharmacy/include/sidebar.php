@@ -71,7 +71,7 @@
 								<ul class="sub-menu">
 									
 									<li>
-										<a href="add-medicine.php">
+										<a href="add-customers.php">
 											<span class="title"> Add Customers</span>
 										</a>
 									</li>
@@ -99,7 +99,7 @@
 								<ul class="sub-menu">
 									
 									<li>
-										<a href="add-medicine.php">
+										<a href="add-suppliers.php">
 											<span class="title"> Add Suppliers</span>
 										</a>
 									</li>
@@ -125,18 +125,7 @@
 								</a>
 							</li>
 
-<li>
-								<a href="search.php">
-									<div class="item-content">
-										<div class="item-media">
-											<i class="ti-search"></i>
-										</div>
-										<div class="item-inner">
-											<span class="title"> Search </span>
-										</div>
-									</div>
-								</a>
-							</li>
+
 
 						</ul>
 						<!-- end: CORE FEATURES -->
