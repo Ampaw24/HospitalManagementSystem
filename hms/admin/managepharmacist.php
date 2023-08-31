@@ -98,7 +98,7 @@ while($row=mysqli_fetch_array($sql))
 												
 												<td >
 												<div class="visible-md visible-lg hidden-sm hidden-xs">
-							<a href="editpharmacist.php?id=<?php echo $row['id'];?>" class="btn btn-transparent btn-xs" tooltip-placement="top" tooltip="Edit"><i class="fa fa-pencil"></i></a>
+ 
 													
 	<a href="managepharmacist.php?id=<?php echo $row['id']?>&del=delete" onClick="return confirm('Are you sure you want to delete?')"class="btn btn-transparent btn-xs tooltips" tooltip-placement="top" tooltip="Remove"><i class="fa fa-times fa fa-white"></i></a>
 												</div>

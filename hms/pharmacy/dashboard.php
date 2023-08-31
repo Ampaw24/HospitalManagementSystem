@@ -10,7 +10,7 @@ if(strlen($_SESSION['id']==0)) {
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Doctor||Dashboard</title>
+		<title>Pharmacist||Dashboard</title>
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
@@ -40,11 +40,11 @@ if(strlen($_SESSION['id']==0)) {
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">Doctor||Dashboard</h1>
+									<h1 class="mainTitle">Pharmacist||Dashboard</h1>
 																	</div>
 								<ol class="breadcrumb">
 									<li>
-										<span>User</span>
+										<span>Pharmacist</span>
 									</li>
 									<li class="active">
 										<span>Dashboard</span>
@@ -56,39 +56,104 @@ if(strlen($_SESSION['id']==0)) {
 						<!-- start: BASIC EXAMPLE -->
 							<div class="container-fluid container-fullw bg-white">
 							<div class="row">
+
+
 								<div class="col-sm-4">
 									<div class="panel panel-white no-radius text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle">My Profile</h2>
+										<div class="panel panel-blue">
+											<span class="fa-stack fa-2x">  5</span>
+											<h2 class="StepTitle" style="color: white;">Medicine</h2>
 											
 											<p class="links cl-effect-1">
-												<a href="edit-profile.php">
-													Update Profile
+												<a href="edit-profile.php" style="color: white;">
+													Manage Medicine
 												</a>
 											</p>
 										</div>
 									</div>
 								</div>
+
+								
+								<div class="col-sm-4">
+	<div class="panel panel-white no-radius text-center">
+		<div class="panel panel-blue">
+			<span class="fa-stack fa-2x">  5</span>
+			<h2 class="StepTitle" style="color: white;">Purchases</h2>
+			
+			<p class="links cl-effect-1">
+				<a href="edit-profile.php" style="color: white;">
+					Add Purchase
+				</a>
+			</p>
+		</div>
+	</div>
+</div>
+
 								<div class="col-sm-4">
 									<div class="panel panel-white no-radius text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-											<h2 class="StepTitle">My Appointments</h2>
-										
-											<p class="cl-effect-1">
-												<a href="appointment-history.php">
-													View Appointment History
+										<div class="panel panel-blue">
+											<span class="fa-stack fa-2x">  5</span>
+											<h2 class="StepTitle" style="color: white;">Customers</h2>
+											
+											<p class="links cl-effect-1">
+												<a href="edit-profile.php" style="color: white;">
+													Manage Customers
 												</a>
 											</p>
 										</div>
 									</div>
 								</div>
 								
-							</div>
-						</div>
+								<div class="row">
+
+
+<div class="col-sm-4">
+	<div class="panel panel-white no-radius text-center">
+		<div class="panel panel-blue">
+			<span class="fa-stack fa-2x">  5</span>
+			<h2 class="StepTitle" style="color: white;">Suppliers</h2>
 			
-					
+			<p class="links cl-effect-1">
+				<a href="edit-profile.php" style="color: white;">
+					Manage Suppliers
+				</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="col-sm-4">
+	<div class="panel panel-white no-radius text-center">
+		<div class="panel panel-blue">
+			<span class="fa-stack fa-2x">  5</span>
+			<h2 class="StepTitle" style="color: white;">Out of Stock</h2>
+			
+			<p class="links cl-effect-1">
+				<a href="edit-profile.php" style="color: white;">
+					Manage Stocks
+				</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="col-sm-4">
+	<div class="panel panel-white no-radius text-center">
+		<div class="panel panel-blue">
+			<span class="fa-stack fa-2x">  5</span>
+			<h2 class="StepTitle" style="color: white;">Expired </h2>
+			
+			<p class="links cl-effect-1">
+				<a href="edit-profile.php" style="color: white;">
+					Manage Expired Medicine
+				</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+
+						
 					
 						
 						

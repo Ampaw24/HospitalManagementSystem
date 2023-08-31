@@ -22,44 +22,109 @@
 							</li>
 							
 
-							<li>
-								<a href="appointment-history.php">
-									<div class="item-content">
-										<div class="item-media">
-											<i class="ti-list"></i>
-										</div>
-										<div class="item-pen">
-											<span class="title"> Appointment History </span>
-										</div>
-									</div>
-								</a>
-							</li>
+					
+
 							<li>
 								<a href="javascript:void(0)">
 									<div class="item-content">
 										<div class="item-media">
-											<i class="fa fa-users"></i>
+											<i class="fa fa-user"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Patients </span><i class="icon-arrow"></i>
+											<span class="title"> Medicine </span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
 								<ul class="sub-menu">
 									
 									<li>
-										<a href="add-patient.php">
-											<span class="title"> Add Patient</span>
+										<a href="add-medicine.php">
+											<span class="title"> Add Medicine</span>
 										</a>
 									</li>
 									<li>
-										<a href="manage-patient.php">
-											<span class="title"> Manage Patient </span>
+										<a href="manage-medicine.php">
+											<span class="title"> Manage Medicine</span>
+										</a>
+									</li>
+									<li>
+										<a href="manage-medicine.php">
+											<span class="title"> Manage Expired Medicine</span>
 										</a>
 									</li>
 									
 								</ul>
 								</li>
+
+
+								<li>
+								<a href="javascript:void(0)">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-users"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> Customers </span><i class="icon-arrow"></i>
+										</div>
+									</div>
+								</a>
+								<ul class="sub-menu">
+									
+									<li>
+										<a href="add-medicine.php">
+											<span class="title"> Add Customers</span>
+										</a>
+									</li>
+									<li>
+										<a href="manage-medicine.php">
+											<span class="title"> Manage Customers</span>
+										</a>
+									</li>
+									
+								</ul>
+								</li>
+
+
+								<li>
+								<a href="javascript:void(0)">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-truck"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> Suppliers </span><i class="icon-arrow"></i>
+										</div>
+									</div>
+								</a>
+								<ul class="sub-menu">
+									
+									<li>
+										<a href="add-medicine.php">
+											<span class="title"> Add Suppliers</span>
+										</a>
+									</li>
+									<li>
+										<a href="manage-medicine.php">
+											<span class="title"> Manage Suppliers</span>
+										</a>
+									</li>
+									
+								</ul>
+								</li>
+
+								<li>
+								<a href="search.php">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-money"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> Add Purchace </span>
+										</div>
+									</div>
+								</a>
+							</li>
+
 <li>
 								<a href="search.php">
 									<div class="item-content">
