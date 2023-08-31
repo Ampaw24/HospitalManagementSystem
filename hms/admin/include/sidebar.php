@@ -12,7 +12,7 @@
 								<a href="dashboard.php">
 									<div class="item-content">
 										<div class="item-media">
-											<i class="ti-home"></i>
+											<i class="fa fa-tachometer"></i>
 										</div>
 										<div class="item-inner">
 											<span class="title"> Dashboard </span>
@@ -145,6 +145,35 @@
 									<li>
 										<a href="addnurses.php">
 											<span class="title"> Add Nurses </span>
+										</a>
+									</li>
+									
+								</ul>
+								</li>
+
+								
+				<li>
+								<a href="javascript:void(0)">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="ti-files"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title">Pharmacist</span><i class="icon-arrow"></i>
+										</div>
+									</div>
+								</a>
+								<ul class="sub-menu">
+									
+									<li>
+										<a href="managepharmacist.php">
+											<span class="title"> Manage Pharmacist</span>
+										</a>
+									</li>
+
+									<li>
+										<a href="add-pharmacist.php">
+											<span class="title"> Add Pharmacist</span>
 										</a>
 									</li>
 									
