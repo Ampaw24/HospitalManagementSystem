@@ -22,26 +22,26 @@
 						<ul class="nav navbar-right">
 							<!-- start: MESSAGES DROPDOWN -->
 								<li  style="padding-top:2% ">
-								<h2>Hospital Management System</h2>
+								<h2>VICK MAK HMS</h2>
 							</li>
 						
 						
 							<li class="dropdown current-user">
 								<a href class="dropdown-toggle" data-toggle="dropdown">
-									<img src="assets/images/doctor.jpeg" > <span class="username">
+									<img src="assets/images/profile.JPG" > <span class="username">
 
 
 
-									<?php $query=mysqli_query($con,"select doctorName from doctors where id='".$_SESSION['id']."'");
+									<?php $query=mysqli_query($con,"select pharmaname from pharm_admin where id='".$_SESSION['id']."'");
 while($row=mysqli_fetch_array($query))
 {
-	echo $row['doctorName'];
+	echo $row['pharmaname'];
 }
 									?> <i class="ti-angle-down"></i></i></span>
 								</a>
 								<ul class="dropdown-menu dropdown-dark">
 									<li>
-										<a href="edit-profile.php">
+										<a href="profile.php">
 											My Profile
 										</a>
 									</li>

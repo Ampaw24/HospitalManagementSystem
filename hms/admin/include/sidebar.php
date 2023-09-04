@@ -56,7 +56,7 @@
 								<a href="javascript:void(0)">
 									<div class="item-content">
 										<div class="item-media">
-											<i class="ti-user"></i>
+											<i class="fa fa-users"></i>
 										</div>
 										<div class="item-inner">
 											<span class="title"> Users </span><i class="icon-arrow"></i>
@@ -91,9 +91,42 @@
 											<span class="title"> Manage Patients </span>
 										</a>
 									</li>
-									
+									<li>
+										<a href="addpatientdrug.php">
+											<span class="title">Patient Drugs </span>
+										</a>
+									</li>
 								</ul>
 								</li>	
+
+								<a href="javascript:void(0)">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-money"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> Accounts </span><i class="icon-arrow"></i>
+										</div>
+									</div>
+								</a>
+								<ul class="sub-menu">
+									
+									<li>
+										<a href="manage-accountant.php">
+											<span class="title"> Manage Accountant  </span>
+										</a>
+									</li>
+									<li>
+										<a href="add-accountant.php">
+											<span class="title"> Add Accountant  </span>
+										</a>
+									</li>
+									
+								</ul>
+							
+								</li>	
+								
+								
 
 <li>
 								<a href="appointment-history.php">
@@ -107,6 +140,33 @@
 									</div>
 								</a>
 							</li>
+
+
+							<li>
+								<a href="manage-bed.php">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-bed"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> Manage Bed </span>
+										</div>
+									</div>
+								</a>
+							</li>
+<li>
+								<a href="appointment-history.php">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="ti-file"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> Appointment History </span>
+										</div>
+									</div>
+								</a>
+							</li>
+
 
 							<li>
 								<a href="manage-bed.php">
@@ -122,7 +182,6 @@
 							</li>
 
 
-
 				<li>
 								<a href="javascript:void(0)">
 									<div class="item-content">
@@ -130,21 +189,21 @@
 											<i class="ti-files"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title">Nurses</span><i class="icon-arrow"></i>
+											<span class="title">Accountants</span><i class="icon-arrow"></i>
 										</div>
 									</div>
 								</a>
 								<ul class="sub-menu">
 									
 									<li>
-										<a href="managenurses.php">
-											<span class="title"> Manage Nurses </span>
+										<a href="manageAccountants.php">
+											<span class="title"> Manage Accountants </span>
 										</a>
 									</li>
 
 									<li>
-										<a href="addnurses.php">
-											<span class="title"> Add Nurses </span>
+										<a href="addAccountants.php">
+											<span class="title"> Add Accountants </span>
 										</a>
 									</li>
 									

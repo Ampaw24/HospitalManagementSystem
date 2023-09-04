@@ -57,6 +57,12 @@
 											<span class="title"> Manage Patient </span>
 										</a>
 									</li>
+									<li>
+										<a href="addpatientdrug.php">
+											<span class="title"> Manage Patient Prescriptions </span>
+										</a>
+									</li>
+									
 									
 								</ul>
 								</li>

@@ -111,7 +111,18 @@
 									
 								</ul>
 								</li>
-
+								<li>
+								<a href="prescriptions.php">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-money"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title">Prescriptions </span>
+										</div>
+									</div>
+								</a>
+							</li>
 								<li>
 								<a href="search.php">
 									<div class="item-content">
@@ -119,7 +130,20 @@
 											<i class="fa fa-money"></i>
 										</div>
 										<div class="item-inner">
-											<span class="title"> Add Purchace </span>
+											<span class="title"> Add Purchase </span>
+										</div>
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a href="profile.php">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-user"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> Manage Profile </span>
 										</div>
 									</div>
 								</a>

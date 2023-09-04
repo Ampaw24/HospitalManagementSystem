@@ -187,6 +187,20 @@ echo "<script>window.location.href ='index.php'</script>";
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-4 blog-smk">
+                        <div class="blog-single">
+
+                                <img src="assets/images/med2.jpg" alt="">
+
+                            <div class="blog-single-det">
+                                <h6>Accounting</h6>
+                    
+                                <a href="hms/account" target="_blank">
+                                    <button class="btn btn-success btn-sm">Login</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     
                     
 

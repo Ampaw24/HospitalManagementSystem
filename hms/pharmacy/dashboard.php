@@ -64,7 +64,11 @@ if(strlen($_SESSION['id']==0)) {
 									<div class="panel panel-white no-radius text-center">
 										<div class="panel panel-blue">
 											<span class="fa-stack fa-2x">  
-												5
+											<?php $result = mysqli_query($con,"SELECT * FROM medicines ");
+$num_rows = mysqli_num_rows($result);
+{
+?>
+										<?php echo htmlentities($num_rows);  } ?>
 										
 											</span>
 											<h2 class="StepTitle" style="color: white;">Medicine</h2>
@@ -115,7 +119,13 @@ if(strlen($_SESSION['id']==0)) {
 <div class="col-sm-4">
 	<div class="panel panel-white no-radius text-center">
 		<div class="panel panel-blue">
-			<span class="fa-stack fa-2x">  5</span>
+			<span class="fa-stack fa-2x">  
+			<?php $result = mysqli_query($con,"SELECT * FROM suppliers");
+$num_rows = mysqli_num_rows($result);
+{
+?>
+										<?php echo htmlentities($num_rows);  } ?></span>
+			</span>
 			<h2 class="StepTitle" style="color: white;">Suppliers</h2>
 			
 			<p class="links cl-effect-1">
@@ -130,7 +140,13 @@ if(strlen($_SESSION['id']==0)) {
 <div class="col-sm-4">
 	<div class="panel panel-white no-radius text-center">
 		<div class="panel panel-blue">
-			<span class="fa-stack fa-2x">  5</span>
+			<span class="fa-stack fa-2x">  
+			<?php $result = mysqli_query($con,"SELECT * FROM drug_prescribtion ");
+$num_rows = mysqli_num_rows($result);
+{
+?>
+										<?php echo htmlentities($num_rows);  } ?></span>
+			</span>
 			<h2 class="StepTitle" style="color: white;">Out of Stock</h2>
 			
 			<p class="links cl-effect-1">
@@ -145,12 +161,17 @@ if(strlen($_SESSION['id']==0)) {
 <div class="col-sm-4">
 	<div class="panel panel-white no-radius text-center">
 		<div class="panel panel-blue">
-			<span class="fa-stack fa-2x">  5</span>
-			<h2 class="StepTitle" style="color: white;">Expired </h2>
+			<span class="fa-stack fa-2x">  		
+					<?php $result = mysqli_query($con,"SELECT * FROM drug_prescribtion ");
+$num_rows = mysqli_num_rows($result);
+{
+?>
+										<?php echo htmlentities($num_rows);  } ?></span>
+			<h2 class="StepTitle" style="color: white;">Prescriptions</h2>
 			
 			<p class="links cl-effect-1">
-				<a href="edit-profile.php" style="color: white;">
-					Manage Expired Medicine
+				<a href="prescriptions.php" style="color: white;">
+					Manage Prescriptions
 				</a>
 			</p>
 		</div>
