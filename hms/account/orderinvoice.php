@@ -9,14 +9,14 @@ if(strlen($_SESSION['id']==0)) {
 if(isset($_POST['submit']))
 {	
 $invoiceid=$_SESSION['id'];
-$patname=$_POST['patname'];
-$patcontact=$_POST['patcontact'];
-$patemail=$_POST['patemail'];
-$gender=$_POST['gender'];
-$pataddress=$_POST['pataddress'];
-$patage=$_POST['patage'];
-$medhis=$_POST['medhis'];
-$sql=mysqli_query($con,"insert into invoices(Docid,PatientName,PatientContno,PatientEmail,PatientGender,PatientAdd,PatientAge,PatientMedhis) values('$docid','$patname','$patcontact','$patemail','$gender','$pataddress','$patage','$medhis')");
+$payment=$_POST['payment'];
+$name=$_POST['patname'];
+$quantityl=$_POST['quantity'];
+$currency=$_POST['currency'];
+$unitprice=$_POST['price'];
+$totalamount=$_POST['totalamount'];
+
+$sql=mysqli_query($con,"insert into invoices(INVOICE_ID,PAYMENTMETHOD,CUSTOMER_NAME,TOTAL_AMOUNT,QUANTITY,CURRENCY,UNITPRICE) values('$invoiceid','$payment','$name','$totalamount','$quantityl','$currency','$unitprice')");
 if($sql)
 {
 echo "<script>alert('Invoice added Successfully');</script>";
@@ -100,7 +100,7 @@ error:function (){}
 <h5 class="panel-title">Order Invoice</h5>
 </div>
 <div class="panel-body">
-<form role="form" name="" method="post">
+<form role="form" method="post">
 
 <div class="form-group">
 <label for="doctorname">
@@ -121,21 +121,35 @@ Patient Name
 <label for="payment">
 Method Of Payment
 </label>
-<select>
-  <option value="option1">Mobile Money</option>
-  <option value="option2" selected>Paypal</option>
-  <option value="option3" disabled>Cash </option>
-  <option value="option4">Bank Cheque</option>
-</select>
-<label for="rg-male" style="padding-left:20px;">
-Currency
-</label>
-<select>
-  <option value="option1" selected>USD</option>
-  <option value="option2">GHS</option>
-  <option value="option3" disabled>EUR</option>
-  <option value="option4">GBP</option>
-</select>
+
+<select name="payment" class="form-control" required="true">
+																<option>Select Method of Payment</option>
+<?php $ret=mysqli_query($con,"select * from mop");
+while($row=mysqli_fetch_array($ret))
+{
+?>
+																<option value="<?php echo htmlentities($row['mo']);?>">
+																	<?php echo htmlentities($row['mo']);?>
+																</option>
+																<?php } ?>
+																
+															</select>
+
+
+<select name="currency" class="form-control" required="true">
+																<option value="">Select Currency</option>
+<?php $ret=mysqli_query($con,"select * from currency");
+while($row=mysqli_fetch_array($ret))
+{
+?>
+																<option value="<?php echo htmlentities($row['name']);?>">
+																	<?php echo htmlentities($row['name']);?>
+																</option>
+																<?php } ?>
+																
+															</select>
+
+
 </div>
 </div>
 <div class="form-group">
@@ -148,19 +162,19 @@ Product Description
 <label for="fess">
  Quantity
 </label>
-<input type="number" name="patage" class="form-control"  placeholder="0" required="true">
+<input type="number" name="quantity" class="form-control"  placeholder="0" required="true">
 </div>
 <div class="form-group">
 <label for="fess">
  Unit Price
 </label>
-<input type="text" name="patage" class="form-control"  placeholder="0" required="true">
+<input type="text" name="price" class="form-control"  placeholder="0" required="true">
 </div>
 <div class="form-group">
 <label for="fess">
  Amount
 </label>
-<input type="text" name="patage" class="form-control"  placeholder="0" required="true">
+<input type="text" name="totalamount" class="form-control"  placeholder="0" required="true">
 </div>
 	
 

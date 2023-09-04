@@ -190,7 +190,7 @@ echo "<script>window.location.href ='index.php'</script>";
                     <div class="col-sm-4 blog-smk">
                         <div class="blog-single">
 
-                                <img src="assets/images/med2.jpg" alt="">
+                                <img src="assets/images/accounting.jpg" alt="">
 
                             <div class="blog-single-det">
                                 <h6>Accounting</h6>
@@ -201,11 +201,6 @@ echo "<script>window.location.href ='index.php'</script>";
                             </div>
                         </div>
                     </div>
-                    
-                    
-
-                    
-                    
                 </div>
             </div>
             
