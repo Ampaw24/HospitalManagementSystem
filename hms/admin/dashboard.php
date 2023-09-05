@@ -61,8 +61,8 @@ if(strlen($_SESSION['id']==0)) {
 							<div class="row">
 								<div class="col-sm-4">
 									<div class="panel panel-white no-radius text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
+										<div class="panel-body panel-green">
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
 											<h2 class="StepTitle">Manage Users</h2>
 											
 											<p class="links cl-effect-1">
@@ -79,8 +79,8 @@ $num_rows = mysqli_num_rows($result);
 								</div>
 								<div class="col-sm-4">
 									<div class="panel panel-white no-radius text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
+										<div class="panel-body panel-green">
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-user fa-stack-1x fa-inverse"></i> </span>
 											<h2 class="StepTitle">Manage Doctors</h2>
 										
 											<p class="cl-effect-1">
@@ -98,8 +98,8 @@ $num_rows1 = mysqli_num_rows($result1);
 								</div>
 								<div class="col-sm-4">
 									<div class="panel panel-white no-radius text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
+										<div class="panel-body panel-green">
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-file fa-stack-1x fa-inverse"></i> </span>
 											<h2 class="StepTitle"> Appointments</h2>
 											
 											<p class="links cl-effect-1">
@@ -119,8 +119,8 @@ $num_rows2 = mysqli_num_rows($sql);
 
 <div class="col-sm-4">
 									<div class="panel panel-white no-radius text-center">
-										<div class="panel-body">
-											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-smile-o fa-stack-1x fa-inverse"></i> </span>
+										<div class="panel-body panel-green">
+											<span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-warning"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
 											<h2 class="StepTitle">Manage Patients</h2>
 											
 											<p class="links cl-effect-1">
@@ -136,14 +136,6 @@ Total Patients :<?php echo htmlentities($num_rows);
 										</div>
 									</div>
 								</div>
-
-
-
-
-
-		
-
-
 
 							</div>
 						</div>

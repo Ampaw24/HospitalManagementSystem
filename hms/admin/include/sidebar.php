@@ -125,6 +125,32 @@
 								</ul>
 							
 								</li>	
+								<a href="javascript:void(0)">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-user"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> Nurses </span><i class="icon-arrow"></i>
+										</div>
+									</div>
+								</a>
+								<ul class="sub-menu">
+									
+									<li>
+										<a href="managenurses.php">
+											<span class="title">Manage Nurses</span>
+										</a>
+									</li>
+									<li>
+										<a href="addnurses.php">
+											<span class="title">Add Nurses</span>
+										</a>
+									</li>
+									
+								</ul>
+							
+								</li>	
 								
 								
 
@@ -168,18 +194,7 @@
 							</li>
 
 
-							<li>
-								<a href="manage-bed.php">
-									<div class="item-content">
-										<div class="item-media">
-											<i class="fa fa-bed"></i>
-										</div>
-										<div class="item-inner">
-											<span class="title"> Manage Bed </span>
-										</div>
-									</div>
-								</a>
-							</li>
+					
 
 
 				<li>
@@ -196,13 +211,13 @@
 								<ul class="sub-menu">
 									
 									<li>
-										<a href="manageAccountants.php">
+										<a href="manageaccountant.php">
 											<span class="title"> Manage Accountants </span>
 										</a>
 									</li>
 
 									<li>
-										<a href="addAccountants.php">
+										<a href="addaccountant.php">
 											<span class="title"> Add Accountants </span>
 										</a>
 									</li>
